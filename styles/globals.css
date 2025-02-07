@@ -216,7 +216,7 @@ a {
 @media (width >= 768px) {
   .square-top {
     margin-top: 20px;
-    margin-right: 21px;
+    margin-right: 20px;
   }
   .rec-label {
     top: 20px;
@@ -341,7 +341,7 @@ a {
 
   /**----------------------------------------**/
 
-  
+
   .footer__preview-text {
     font-weight: 700;
     font-size: 120px;
@@ -353,6 +353,19 @@ a {
   }
 }
 
-@media (width > 1024px) {
-
+@media (width >= 1024px) {
+  .header__theme-menu {
+    flex-direction: row;
+  }
+  .header__theme-menu-list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin-top: 18px;
+    margin-right: -44px;
+  }
+  .header__theme-menu-button {
+    width: 70px;
+    height: 26px;
+}
 }
