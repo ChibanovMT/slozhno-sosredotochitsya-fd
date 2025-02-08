@@ -101,7 +101,7 @@ a {
   font-size: 18px;
   line-height: 23.4px;
   color: var(--accent-text-color);
-  padding-top: 45px;
+  padding-top: 40px;
 }
 
 .decorated-square {
@@ -275,7 +275,7 @@ a {
     grid-row-start: 1;
   }
   
-  .gallery__image{
+  .gallery__image {
     inline-size: 100%;
     block-size: 100%;
     max-block-size: 100%;
