@@ -305,7 +305,7 @@ a {
     grid-row: 4 ;
   }
   .informative__text:last-child {
-    padding: 0 10px 40px;
+    padding-bottom:60px;
   }
 
   /**.gallery__image:nth-child(2) {
