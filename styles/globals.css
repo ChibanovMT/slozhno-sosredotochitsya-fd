@@ -256,6 +256,9 @@ a {
   .informative__text > .subtitle-side {
     margin-top: 21px;
   }
+  .informative__text:first-child {
+    padding-top: 60px;
+  }
   /** ---Это media для main --> секция 3--- **/
 
 
