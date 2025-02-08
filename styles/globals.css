@@ -96,6 +96,14 @@ a {
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--accent-text-color);
+  padding-top: 45px;
+}
+
 .decorated-square {
   width: 25.04px;
   height: 25px;

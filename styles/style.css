@@ -16,12 +16,6 @@
   padding: 0 10px 20px;
 }
 
-.heading {
-  font-weight: 700;
-  color: var(--accent-text-color);
-  padding-top: 40px;
-}
-
 .subtitle {
   font-weight: 700;
   color: var(--background-text-color);
