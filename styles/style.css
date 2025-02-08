@@ -23,6 +23,10 @@
   margin-bottom: 10px;
 }
 
+.informative__text:last-child > .subtitle {
+  margin-top: 40px;
+}
+
 .main-text {
   font-weight: 400;
   color: var(--text-color);
