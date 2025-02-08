@@ -3,3 +3,88 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
+
+/** ---Это main--- **/
+.main {
+  font-size: 18px;
+  line-height: 23.4px;
+  background-color: var(--background-color);
+}
+
+.informative__text {
+  padding: 0 10px 20px;
+}
+
+.heading {
+  font-weight: 700;
+  color: var(--accent-text-color);
+  padding-top: 40px;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: var(--background-text-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.subtitle-thin {
+  font-weight: 400;
+}
+
+.informative__text > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 10px;
+}
+
+.main-text__link {
+  text-shadow: 2.2px 1.5px var(--link-shadow);
+  text-decoration: none;
+}
+/** ---Это main--- **/
+
+
+
+/** ---Это footer--- **/
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer__preview-text {
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 95.7px;
+  padding-top: 276px;
+  padding-bottom: 275px;
+  margin-left: 14px;
+  color: var(--side-accent-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+/** ---Это footer--- **/
+
+
+
+/** ---Это focus'ы и hover'ы кнопок и ссылок--- **/
+.header__theme-menu-button:focus {
+  border: none;
+  border-bottom: 1px solid var(--accent-text-color);
+  outline: none;
+}
+
+.main-text__link:focus {
+  outline: 1px solid var(--text-color);
+}
+
+.header__theme-menu-button:hover {
+  border: none;
+  border: 1px solid var(--accent-text-color);
+  opacity: 0.4;
+}
+/** ---Это focus'ы и hover'ы кнопок и ссылок--- **/

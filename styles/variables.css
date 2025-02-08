@@ -5,5 +5,10 @@
 :root {
   --accent-color: #FF0070;
   --side-accent-color: #DB00FF;
+  --accent-text-color: #FF0070;
+  --text-color: #F1B2CE;
+  --link-shadow: #F1B2CE;
+  --background-text-color: #000028;
   --background-color: #000028;
+  --background-immage: url(/images/cover-image-dark.png);
 }

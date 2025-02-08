@@ -42,8 +42,9 @@ a {
   line-height: inherit;
 }
 
+/** ---Это header--- **/
 .header {
-  background-image: url(/images/cover-image-dark.png);
+  background-image: var(--background-immage);
   background-position: bottom;
   background-size: cover;
 }
@@ -69,7 +70,7 @@ a {
 .header__theme-menu-button {
   padding: 1.5px 13px;
   border: none;
-  border-radius: 5px;
+  color: var(--accent-text-color);
   cursor: pointer;
   text-transform: lowercase;
   width: 70px;
@@ -78,6 +79,11 @@ a {
   font-size: 18px;
   line-height: 18px;
   align-items: center;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--accent-text-color);
 }
 
 .header__preview-text {
@@ -113,7 +119,7 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--background-color);
+  color: var(--background-text-color);
   margin: 55px 10px 31px 10px;
 }
 
@@ -148,72 +154,12 @@ a {
   font-size: 18px;
   line-height: 25px;
 }
+/** ---Это header--- **/
 
 
-
-.main {
-  font-size: 18px;
-  line-height: 23.4px;
-  background-color: var(--background-color);
-}
-
-.informative__text {
-  padding: 0 10px 20px;
-}
-
-.heading {
-  font-weight: 700;
-  color: var(--accent-color);
-  padding-top: 40px;
-}
-
-.subtitle {
-  font-weight: 700;
-  color: var(--background-color);
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.main-text {
-  font-weight: 400;
-  color: #F1B2CE;
-}
-
-.subtitle-thin {
-  font-weight: 400;
-}
-
-.informative__text > img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-  margin-bottom: 10px;
-}
-
-.main-text__link {
-  text-shadow: 2.2px 1.5px var(--accent-color);
-  text-decoration: none;
-}
-
-
-
-
-.footer {
-  background-color: var(--background-color);
-}
-
-.footer__preview-text {
-  font-weight: 700;
-  font-size: 116px;
-  line-height: 95.7px;
-  padding-top: 276px;
-  padding-bottom: 275px;
-  margin-left: 14px;
-  color: var(--side-accent-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-}
 
 @media (width >= 768px) {
+  /** ---Это media для header--- **/
   .square-top {
     margin-top: 20px;
     margin-right: 20px;
@@ -242,11 +188,11 @@ a {
   .margins-bottom {
     border: 10px solid transparent;
   }
+  /** ---Это media для header--- **/
 
 
-  /**----------------------------------------**/
 
-
+  /** ---Это media для main --> секция 1--- **/
   .informative__text-one {
     display: grid;
     grid-template-columns: 236px 1fr 1fr;
@@ -269,8 +215,11 @@ a {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  /** ---Это media для main --> секция 1--- **/
 
 
+
+  /** ---Это media для main --> секция 2--- **/
   .informative__text-two {
     display: grid;
     grid-template-columns: 1fr;
@@ -291,13 +240,19 @@ a {
     grid-column: 1;
     grid-column-end: 4;
   }
+  /** ---Это media для main --> секция 2--- **/
 
 
+
+  /** ---Это media для main --> секция 3--- **/
   .informative__text > .subtitle-side {
     margin-top: 21px;
   }
+  /** ---Это media для main --> секция 3--- **/
 
 
+
+  /** ---Это media для main --> секция 4--- **/
   .informative__text-photos {
     display: grid;
     grid-template-columns: 229px 230px 229px;
@@ -337,11 +292,11 @@ a {
     grid-column: 2;
     grid-row: 4 / 5;
   }
+  /** ---Это media для main --> секция 3--- **/
 
 
-  /**----------------------------------------**/
 
-
+  /** ---Это media для footer--- **/
   .footer__preview-text {
     font-weight: 700;
     font-size: 120px;
@@ -351,9 +306,13 @@ a {
     padding-bottom: 10px;
     padding-bottom: 417px;
   }
+  /** ---Это media для footer--- **/
 }
 
+
+
 @media (width >= 1024px) {
+  /** ---Это media для header--- **/
   .header__theme-menu {
     flex-direction: row;
   }
@@ -361,11 +320,102 @@ a {
     display: flex;
     gap: 10px;
     padding: 0;
-    margin-top: 18px;
-    margin-right: -44px;
+    margin-top: 19px;
+    margin-right: -45px;
   }
+  .header__preview-text {
+    margin-top: 265px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 129.53px;
+}
   .header__theme-menu-button {
     width: 70px;
     height: 26px;
-}
+  }
+  .header__text {
+    margin: 113px 20px 90px 513px;
+  }
+  /** ---Это media для header--- **/
+
+
+
+  /** ---Это media для main --> секция 1--- **/
+  .informative__text-one {
+    grid-template-columns: 314.96px 1fr 1fr;
+  }
+  /** ---Это media для main --> секция 1--- **/
+
+
+
+  /** ---Это media для main --> секция 2 и 3--- **/
+  .informative__text-two {
+    grid-template-columns: 315px 315px 315px;
+    grid-template-rows: 47px 23px 431px;
+    gap: 20px;
+  }
+  .informative__text-two > .heading {
+    margin-right: 618px;
+  }
+  .informative__text-two > .subtitle {
+    grid-column: 1;
+  }
+  .informative__text-two > .main-text {
+    grid-column: 1;
+    margin-top: -10px;
+  }
+  .informative__text-two > .subtitle__big-screen-three {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .informative__text-two > .subtitle__big-screen-four {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .informative__text-two > .main-text__big-screen-three {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .informative__text-two > .main-text__big-screen-four {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  /** ---Это media для main --> секция 2 и 3--- **/
+
+
+
+  /** ---Это media для main --> секция 4--- **/
+  .informative__text-photos {
+    grid-template-columns: 315px 315px 314px;
+    grid-template-rows: 23px 260px 315px 433px;
+  }
+  .gallery__image:nth-child(2) {
+    width: 650px;
+    height: 260px;
+  }
+  .gallery__image:nth-child(3) {
+    width: 314px;
+    height: 595px;
+  }
+  .gallery__image:nth-child(4) {
+    width: 315px;
+    height: 768px;
+  }
+  .gallery__image:nth-child(6) {
+    width: 649px;
+    height: 433px;
+  }
+  /** ---Это media для main --> секция 4--- **/
+
+
+
+  /** ---Это media для footer--- **/
+  .footer__preview-text {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    line-height: 129.53px;
+    padding-top: 319px;
+    padding-left: 262px;
+    padding-bottom: 10px;
+    padding-bottom: 274px;
+  }
+  /** ---Это media для footer--- **/
 }
