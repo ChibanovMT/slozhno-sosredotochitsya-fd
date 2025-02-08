@@ -304,6 +304,9 @@ a {
     grid-column: 2 / 4;
     grid-row: 4 ;
   }
+  .informative__text:last-child {
+    padding: 0 10px 40px;
+  }
 
   /**.gallery__image:nth-child(2) {
     width: 479px;
