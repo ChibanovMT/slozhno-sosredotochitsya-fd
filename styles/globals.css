@@ -434,6 +434,7 @@ a {
   .informative__text-photos {
     grid-template-columns: 315px 315px 314px;
     grid-template-rows: 23px 260px 315px 433px;
+    margin-top: -10px;
   }
   .gallery__image:nth-child(2) {
     width: 650px;
