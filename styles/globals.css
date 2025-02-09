@@ -395,7 +395,7 @@ a {
     grid-template-columns: 315px 315px 315px;
     grid-template-rows: 47px 23px 398px;
     gap: 20px;
-    padding: 0 20px 73px;
+    padding: 0 20px 72px;
   }
   .informative__text:last-child > .subtitle {
     margin-left: -335px;
@@ -434,7 +434,7 @@ a {
   .informative__text-photos {
     grid-template-columns: 315px 315px 314px;
     grid-template-rows: 23px 260px 315px 433px;
-    margin-top: -10px;
+    margin-top: -15px;
   }
   .gallery__image:nth-child(2) {
     width: 650px;
