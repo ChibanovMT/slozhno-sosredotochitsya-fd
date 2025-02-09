@@ -393,7 +393,7 @@ a {
   /** ---Это media для main --> секция 2 и 3--- **/
   .informative__text-two {
     grid-template-columns: 315px 315px 315px;
-    grid-template-rows: 47px 23px 431px;
+    grid-template-rows: 47px 23px 398px;
     gap: 20px;
   }
   .informative__text-two > .heading {
