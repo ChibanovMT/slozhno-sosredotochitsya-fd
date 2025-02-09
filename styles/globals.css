@@ -395,7 +395,7 @@ a {
     grid-template-columns: 315px 315px 315px;
     grid-template-rows: 47px 23px 398px;
     gap: 20px;
-    padding: 0 20px 75px;
+    padding: 0 20px 73px;
   }
   .informative__text:last-child > .subtitle {
     margin-left: -335px;
