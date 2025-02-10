@@ -185,8 +185,9 @@
 
 
 /** ---Это footer--- **/
+
 .footer {
-  position: relative; 
+  position: relative;
   height: 100vh;
   min-height: 668px;
 }
@@ -314,7 +315,7 @@
 
 
   /** ---Это media для main --> секция 3--- **/
-  .informative__text:nth-child(3) > .subtitle__z-index__up{
+  .informative__text:nth-child(3) > .subtitle__z-index__up {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     z-index: -1;
@@ -351,7 +352,7 @@
     grid-auto-flow: dense;
     padding-left: 20px;
   }
-  .subtitle-photos{
+  .subtitle-photos {
     margin-bottom: 0px;
   }
   .gallery__image {
