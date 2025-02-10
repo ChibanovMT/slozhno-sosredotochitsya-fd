@@ -17,9 +17,25 @@
   --background-text-color: #353430;
   --background-color: #ffffff;
   --background-immage: url(/images/cover-image-light.png);
+  
 }
 
-
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #FF8DCB;
+    --side-accent-color: #FFC2E6;
+    --accent-text-color: #353430;
+    --text-color: #353430;
+    --link-shadow: #FF8DCB;
+    --background-text-color: #353430;
+    --background-color: #ffffff;
+    --background-immage: url(/images/cover-image-light.png);
+  }
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--accent-text-color);
+    opacity: 0.4;
+  }
+}
 
 
 
