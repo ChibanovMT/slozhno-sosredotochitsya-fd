@@ -222,9 +222,8 @@
 }
 
 .main-text__link:hover {
-  outline: 1px solid var(--text-color);
   outline: none;
-  border-bottom: 1px solid var(--accent-text-color);
+  border-bottom: 1px solid var(--text-color);
 }
 /** ---Это focus'ы и hover'ы кнопок и ссылок--- **/
 
