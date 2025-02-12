@@ -1,14 +1,4 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --accent-color: #FF0070;
   --side-accent-color: #DB00FF;
   --accent-text-color: #FF0070;
@@ -17,6 +7,26 @@
   --background-text-color: #000028;
   --background-color: #000028;
   --background-immage: url(/images/cover-image-dark.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #FF0070;
+    --side-accent-color: #DB00FF;
+    --accent-text-color: #FF0070;
+    --text-color: #F1B2CE;
+    --link-shadow: #FF0070;
+    --background-text-color: #000028;
+    --background-color: #000028;
+    --background-immage: url(/images/cover-image-dark.png);
+  }
+  :root.theme-dark .rec-label,
+  :root.theme-auto .rec-label {
+    display: block;
+  }
+  :root.theme-light .rec-label {
+    display: none;
+  }
 }
 
 .theme-dark .page {

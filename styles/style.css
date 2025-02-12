@@ -25,7 +25,7 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border: 1px solid var(--accent-color); /* Цвет рамки */
+  border: 1px solid var(--accent-text-color); /* Цвет рамки */
   width: 25px;
   height: 25px;
 }
@@ -115,7 +115,7 @@
 
 .rec-label {
   position: absolute;
-  top: 12px;
+  top: 11px;
   right: 38px;
   color: var(--accent-color);
   font-weight: 400;
@@ -131,7 +131,7 @@
   width: 13px;
   height: 13px;
   top: 5px;
-  left: 41px;
+  left: 40px;
   background-color: var(--accent-color);
   filter: blur(3px);
 }
@@ -187,7 +187,9 @@
 /** ---Это footer--- **/
 
 .footer {
-  position: relative;
+  display: flex; /* Включаем Flexbox */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center;
   height: 100vh;
   min-height: 668px;
 }
@@ -196,9 +198,6 @@
   font-weight: 700;
   font-size: 116px;
   line-height: 95.7px;
-  padding-top: 276px;
-  padding-bottom: 275px;
-  margin-left: 14px;
   color: var(--side-accent-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
@@ -218,8 +217,14 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-text-color);
-  opacity: 0.4;
+  outline: none;
+  border: 1px solid rgba(255, 140, 203, 0.4);
+}
+
+.main-text__link:hover {
+  outline: 1px solid var(--text-color);
+  outline: none;
+  border-bottom: 1px solid var(--accent-text-color);
 }
 /** ---Это focus'ы и hover'ы кнопок и ссылок--- **/
 
@@ -319,7 +324,7 @@
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     z-index: -1;
-    width: 472px;
+    width: auto;
     height: 23px;
   }
   .subtitle-side {
@@ -328,7 +333,7 @@
     z-index: 0;
     margin-top: 43px;
     height: 23.92px;
-    width: 472px;
+    width: auto;
   }
   .informative__text:nth-child(3) > .main-text-first {
     grid-column: 2 / 4;
@@ -363,7 +368,7 @@
   }
   .informative__text:last-child > .subtitle {
     margin-top: 0px;
-    margin-left: -252px;
+    grid-column: 1 / 4
   }
   .gallery__image:nth-child(2) {
     grid-column: 1 / -2;
@@ -426,9 +431,6 @@
     font-weight: 700;
     font-size: 120px;
     line-height: 99px;
-    padding-top: 461px;
-    padding-left: 188px;
-    padding-bottom: 417px;
   }
   /** ---Это media для footer--- **/
 }
@@ -473,22 +475,12 @@
 
   /** ---Это media для main --> секция 2 и 3--- **/
   .informative__text-average {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 0 20px 72px;
   }
-  .subtitle-side {
-    width: 649px;
-  }
-  .informative__text:nth-child(3) > .subtitle__z-index__up {
-    width: 649px;
-  }
   .informative__text:nth-child(3) > .main-text-first {
     margin-top: 12px;
-  }
-  .informative__text:last-child > .subtitle {
-    margin-left: -335px;
   }
   .informative__text-average > .heading {
     margin-right: 618px;
@@ -542,6 +534,7 @@
     width: 649px;
     height: 433px;
   }**/
+  
   /** ---Это media для main --> секция 4--- **/
 
 
@@ -550,9 +543,6 @@
   .footer__preview-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 129.53px;
-    padding-top: 319px;
-    padding-left: 262px;
-    padding-bottom: 274px;
   }
   /** ---Это media для footer--- **/
 }
