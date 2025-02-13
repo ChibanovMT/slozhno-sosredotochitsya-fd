@@ -279,6 +279,7 @@
   .heading {
     padding: 0px;
     font-size: 18px;
+    width: 236px;
   }
   .subtitle {
     margin: 0px;
@@ -303,14 +304,8 @@
     grid-template-rows: auto auto auto auto;
     padding: 0 20px 60px;
   }
-  .heading {
-    width: 236px;
-  }
   .all__section__card {
     margin-top: 20px;
-  }
-  .subtitle__big-screen-more:nth-child(2) {
-
   }
   /** ---Это media для main --> секция 2--- **/
 
@@ -504,9 +499,6 @@
   }
   .informative__text-average > .heading {
     margin-right: 0px;
-  }
-  .informative__text-average > .subtitle {
-    grid-column: 1;
   }
   .informative__text-average > .main-text {
     grid-column: 1;
