@@ -152,6 +152,8 @@
 .subtitle {
   font-weight: 700;
   color: var(--background-text-color);
+  font-size: 18px;
+  line-height: 23.4px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -163,10 +165,14 @@
 .main-text {
   font-weight: 400;
   color: var(--text-color);
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .subtitle-thin {
   font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
 }
 
 .informative__text > img {
@@ -196,7 +202,7 @@
 
 .footer__preview-text {
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   color: var(--side-accent-color);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -297,22 +303,14 @@
     grid-template-rows: auto auto auto auto;
     padding: 0 20px 60px;
   }
-  .informative__text-average > .heading {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    margin-right: 491px;
+  .heading {
+    width: 236px;
   }
-  .informative__text-average > .subtitle {
-    margin: 0px;
+  .all__section__card {
     margin-top: 20px;
-    grid-column: 1;
-    grid-column-end: 4;
   }
-  .informative__text-average > .main-text {
-    margin: 0px;
-    margin-top: 10px;
-    grid-column: 1;
-    grid-column-end: 4;
+  .subtitle__big-screen-more:nth-child(2) {
+
   }
   /** ---Это media для main --> секция 2--- **/
 
@@ -355,6 +353,7 @@
     box-sizing: border-box;
     grid-auto-flow: dense;
     padding-left: 20px;
+    padding-right: 20px;
   }
   .subtitle-photos {
     margin-bottom: 0px;
@@ -468,21 +467,43 @@
   .informative__text-small {
     grid-template-columns: 314.96px 1fr 1fr;
   }
+  .informative__text-small > .heading {
+    width: 314.96px;
+  }
   /** ---Это media для main --> секция 1--- **/
 
 
 
   /** ---Это media для main --> секция 2 и 3--- **/
   .informative__text-average {
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 0 20px 72px;
+    padding: 0 20px 20px;
+  }
+  .all__section__card {
+    display: grid;
+    margin-top: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 2;
+    column-gap: 20px;
+  }
+  .section__card {
+    min-width: 315px;
+  }
+
+
+  .subtitle-side {
+    margin-top: 42.3px;
+  }
+
+
+  .informative__text-average > .heading {
+    width: 314.96px;
   }
   .informative__text:nth-child(3) > .main-text-first {
-    margin-top: 12px;
+    margin-top: 6px;
   }
   .informative__text-average > .heading {
-    margin-right: 618px;
+    margin-right: 0px;
   }
   .informative__text-average > .subtitle {
     grid-column: 1;
