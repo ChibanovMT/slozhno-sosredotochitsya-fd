@@ -497,9 +497,6 @@
   .informative__text:nth-child(3) > .main-text-first {
     margin-top: 6px;
   }
-  .informative__text-average > .heading {
-    margin-right: 0px;
-  }
   .informative__text-average > .main-text {
     grid-column: 1;
     margin-top: -10px;
