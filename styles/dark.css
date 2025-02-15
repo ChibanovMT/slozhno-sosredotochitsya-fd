@@ -4,6 +4,7 @@
   --accent-text-color: #FF0070;
   --text-color: #F1B2CE;
   --link-shadow: #FF0070;
+  --hover-button-color: rgba(100%, 0%, 44%, 0.4);
   --background-text-color: #000028;
   --background-color: #000028;
   --background-immage: url(/images/cover-image-dark.png);
@@ -16,6 +17,7 @@
     --accent-text-color: #FF0070;
     --text-color: #F1B2CE;
     --link-shadow: #FF0070;
+    --hover-button-color: rgba(100%, 0%, 44%, 0.4);
     --background-text-color: #000028;
     --background-color: #000028;
     --background-immage: url(/images/cover-image-dark.png);

@@ -4,6 +4,7 @@
   --accent-text-color: #353430;
   --text-color: #353430;
   --link-shadow: #FF8DCB;
+  --hover-button-color: rgba(20%, 19%, 18%, 0.4);
   --background-text-color: #353430;
   --background-color: #ffffff;
   --background-immage: url(/images/cover-image-light.png);
@@ -16,6 +17,7 @@
     --accent-text-color: #353430;
     --text-color: #353430;
     --link-shadow: #FF8DCB;
+    --hover-button-color: rgba(20%, 19%, 18%, 0.4);
     --background-text-color: #353430;
     --background-color: #ffffff;
     --background-immage: url(/images/cover-image-light.png);
