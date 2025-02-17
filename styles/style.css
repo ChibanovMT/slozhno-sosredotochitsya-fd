@@ -112,7 +112,7 @@
   color: var(--accent-text-color);
   padding-top: 40px;
   width: 100%;
-  max-width: none;
+  max-width: 355px;
 }
 
 .title-decor {
@@ -298,6 +298,7 @@
   .heading {
     padding: 0px;
     font-size: 18px;
+    max-width: 236px;
   }
   .subtitle {
     margin: 0px;
@@ -437,7 +438,7 @@
     padding: 60px 20px 60px;
   }
   .heading {
-    max-width: none;
+    max-width: 315px;
   }
   /** ---Это media для main --> секция 1--- **/
 
