@@ -112,7 +112,7 @@
   color: var(--accent-text-color);
   padding-top: 40px;
   width: 100%;
-  max-width: 236px;
+  max-width: none;
 }
 
 .title-decor {
@@ -185,6 +185,14 @@
   object-fit: cover;
   width: 100%;
   max-height: 100%;
+}
+
+.gallery__image {
+  margin-bottom: 6px;
+}
+
+.informative__text-photos {
+  padding-bottom: 34px;
 }
 
 .main-text__link {
@@ -296,8 +304,6 @@
     margin-bottom: 10px;
     grid-column: 2 / 4;
     grid-row: 1;
-    height: 100%;
-    max-height: 23px;
   }
   .main-text {
     grid-column-start: 2;
@@ -331,7 +337,7 @@
     grid-column: 2 / 4;
     grid-row: 1 / 3;
     z-index: 0;
-    margin-top: 43px;
+    margin-top: 20px;
     width: auto;
   }
   /** ---Это media для main --> секция 3--- **/
@@ -387,7 +393,7 @@
   /** ---Это media для footer--- **/
   .footer__preview-text {
     font-weight: 700;
-    font-size: 120px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
   }
   /** ---Это media для footer--- **/
@@ -430,6 +436,9 @@
   .informative__text {
     padding: 60px 20px 60px;
   }
+  .heading {
+    max-width: none;
+  }
   /** ---Это media для main --> секция 1--- **/
 
 
@@ -453,7 +462,7 @@
     min-width: 315px;
   }
   .subtitle-side {
-    margin-top: 42.3px;
+    margin-top: 20px;
   }
   .informative__text-average > .heading {
     max-width: 314.96px;
@@ -487,6 +496,9 @@
   .footer__preview-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 129.53px;
+  }
+  .informative__text-photos {
+    padding-top: 0px;
   }
   /** ---Это media для footer--- **/
 }
